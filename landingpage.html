@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="footer.css"/>
+  </head>
+  <body>
+    <!--Menu-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img
+          heigth="50px"
+          width="50px"
+          src="img/logo-programacion.png"
+          alt=""
+        />
+      </a>
+      <ul class="Menu-horizontal">
+        <li><a href="">Home</a></li>
+        <li><a href="">Nuestros Servicios</a></li>
+        <li>
+          <a href="">Cursos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Programación de cero</a></li>
+            <li><a href="">Programación avanzada</a></li>
+            <li><a href="">Machine learning</a></li>
+          </ul>
+        </li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Soporte</a></li>
+      </ul>
+    </nav>
+
+    <!--Seccion Cursos-->
+    <section class="seccion-cursos">
+      <div class="div-gral-cursos">
+        <div class="div-cursos-texto">
+          <h2>Seccion Cursos</h2>
+          <p>Cursos disponibles para el aprendizaje de los alumnos. Se encuentran seccionados por categorías. Sigue
+            la ruta predefinida o ve a la categoría que más te interesa.
+          </p>
+        </div>
+
+        <div class="div-cursos-img">
+          <img src="img/logo-programacion.png" />
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion Nuestros servicios-->
+
+    <section class="seccion-servicios">
+      <div class="div-gral-servicios">
+        <div class="div-servicios-texto">
+          <h2>Seccion Nuestros Servicios</h2>
+          <p>
+            Nuestros servicios constan en las siguientes funciones Con nuestro
+            plan estarás preparado para dominar el mundo de la programación, mejorar con expertos
+            y actualizarte con las últimas noticias de la tecnología.
+          </p>
+        </div>
+
+        <div class="div-servicios-vid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6svvtOjLA-A?si=HR27dmGxOCtoSwDL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>    
+
+
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">   
+       <h2>Formulario de Contacto</h2>   
+       <p>Complete todos los campos</p>   
+       <form class="formulario">   
+        <div class="campo">   
+         <label for="nombre">Nombre:</label>   
+         <input   
+          type="text"   
+          id="nombre"   
+          name="nombre"   
+          placeholder="ingrese sus nombres"   
+         />   
+         <br />   
+         <label for="apellido">Apellido:</label>   
+         <input   
+          type="text"   
+          id="apellido"   
+          name="apellido"   
+          placeholder="ingrese sus apellidos"   
+         />   
+        </div>   
+        <div class="campo">   
+         <label for="nombre">Pais:</label>   
+         <select>   
+          <option value="">Seleccione un pais</option>   
+          <option value="peru">Peru</option>   
+          <option value="argentina">Argentina</option>   
+          <option value="venezuela">Venezuela</option>   
+          <option value="brasil">Brasil</option>   
+          <option value="uruguay">Uruguay</option>   
+         </select>   
+        </div>   
+        <div class="campo">   
+          <label>Preferencias:</label>   
+          <ul class="lista-checkbox">   
+           <li><label><input type="checkbox" name="preferencias" value="a">Terminos y condiciones</label></li>
+   
+           <li><label><input type="checkbox" name="preferencias" value="b">Tratamiento de datos(opcional)</label></li>
+   
+          </ul>   
+        </div>   
+        <div class="campo">   
+         <label>Sexo:</label>   
+         <ul class="lista-radio">   
+          <li><label><input type="radio" name="sexo" value="a">Masculino</label></li>
+   
+          <li><label><input type="radio" name="sexo" value="b">Femenino</label></li>
+   
+         </ul>
+         <p class="boton-enviar">
+          <button type="submit">Enviar</button>
+
+         </p>
+
+         
+   
+       </form>
+      </div> 
+    </section>
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="img/logo-programacion.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>CodeTips</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
